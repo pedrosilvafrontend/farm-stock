@@ -1,0 +1,394 @@
+{
+  "farms": [
+    {
+      "name": "Fazenda São João",
+      "totalArea": 1500.5,
+      "cultivableArea": 1200.75,
+      "city": "Santa Maria",
+      "state": "RS",
+      "id": "1"
+    },
+    {
+      "name": "Fazenda Boa Vista",
+      "totalArea": 2300.25,
+      "cultivableArea": 1800.5,
+      "city": "Passo Fundo",
+      "state": "RS",
+      "id": "2"
+    },
+    {
+      "name": "Fazenda Santa Clara",
+      "totalArea": 3200.8,
+      "cultivableArea": 2800.5,
+      "city": "Cruz Alta",
+      "state": "RS",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Fazenda Primavera",
+      "totalArea": 1850.4,
+      "cultivableArea": 1600.25,
+      "address": "Rodovia RS-342, km 78",
+      "city": "Ijuí",
+      "state": "RS",
+      "latitude": -28.3882,
+      "longitude": -53.9146
+    },
+    {
+      "id": "5",
+      "name": "Fazenda Horizonte",
+      "totalArea": 4200.6,
+      "cultivableArea": 3800.3,
+      "address": "Estrada Municipal 233",
+      "city": "Não-Me-Toque",
+      "state": "RS",
+      "latitude": -28.4548,
+      "longitude": -52.8182
+    },
+    {
+      "id": "6",
+      "name": "Fazenda Vale Verde",
+      "totalArea": 2750.9,
+      "cultivableArea": 2400.45,
+      "address": "Rodovia PR-323, km 45",
+      "city": "Cascavel",
+      "state": "PR",
+      "latitude": -24.9578,
+      "longitude": -53.4595
+    },
+    {
+      "id": "7",
+      "name": "Fazenda São Pedro",
+      "totalArea": 5100.3,
+      "cultivableArea": 4500.8,
+      "address": "Estrada Rural 567",
+      "city": "Toledo",
+      "state": "PR",
+      "latitude": -24.7252,
+      "longitude": -53.7417
+    },
+    {
+      "id": "8",
+      "name": "Fazenda Aurora",
+      "totalArea": 3600.7,
+      "cultivableArea": 3200.4,
+      "address": "Rodovia MT-170, km 123",
+      "city": "Sorriso",
+      "state": "MT",
+      "latitude": -12.5452,
+      "longitude": -55.7211
+    },
+    {
+      "id": "9",
+      "name": "Fazenda Bom Futuro",
+      "totalArea": 6800.5,
+      "cultivableArea": 6200.9,
+      "address": "Estrada do Chapadão, km 89",
+      "city": "Lucas do Rio Verde",
+      "state": "MT",
+      "latitude": -13.0588,
+      "longitude": -55.9042
+    },
+    {
+      "id": "10",
+      "name": "Fazenda Nova Esperança",
+      "totalArea": 4900.2,
+      "cultivableArea": 4300.6,
+      "address": "Rodovia GO-060, km 234",
+      "city": "Rio Verde",
+      "state": "GO",
+      "latitude": -17.7923,
+      "longitude": -50.9192
+    },
+    {
+      "id": "11",
+      "name": "Fazenda Santa Maria",
+      "totalArea": 3900.4,
+      "cultivableArea": 3500.2,
+      "address": "Estrada Municipal 789",
+      "city": "Jataí",
+      "state": "GO",
+      "latitude": -17.8797,
+      "longitude": -51.7208
+    },
+    {
+      "name": "Fazenda Paraíso",
+      "totalArea": 5500.8,
+      "cultivableArea": 5000.3,
+      "city": "Luís Eduardo Magalhães",
+      "state": "BA",
+      "status": "active",
+      "id": "12"
+    }
+  ],
+  "fields": [
+    {
+      "id": "1",
+      "farmId": "1",
+      "name": "Talhão 1",
+      "area": 150.75,
+      "cultivableArea": 145.5,
+      "latitude": -29.687,
+      "longitude": -53.815
+    },
+    {
+      "id": "2",
+      "farmId": "1",
+      "name": "Talhão 2",
+      "area": 200.25,
+      "cultivableArea": 195.75,
+      "latitude": -29.6875,
+      "longitude": -53.8155
+    }
+  ],
+  "crops": [
+    {
+      "id": "1",
+      "fieldId": 1,
+      "name": "Soja Safra 2023/24",
+      "type": "BEAN",
+      "status": "IN_PROGRESS",
+      "startDate": "2023-10-15",
+      "endDate": "2024-03-20",
+      "estimatedProduction": 580.5,
+      "actualProduction": null
+    },
+    {
+      "id": "2",
+      "fieldId": 2,
+      "name": "Milho Safrinha 2024",
+      "type": "CORN",
+      "status": "PLANNED",
+      "startDate": "2024-04-01",
+      "endDate": null,
+      "estimatedProduction": 820.75,
+      "actualProduction": null
+    }
+  ],
+  "activities": [
+    {
+      "id": "1",
+      "cropId": 1,
+      "type": "SEEDING",
+      "status": "COMPLETED",
+      "startDate": "2023-10-15",
+      "endDate": "2023-10-16",
+      "description": "Plantio de soja",
+      "notes": "Densidade: 14 sementes/metro"
+    },
+    {
+      "id": "2",
+      "cropId": 1,
+      "type": "FERTILIZING",
+      "status": "PLANNED",
+      "startDate": "2023-11-15",
+      "endDate": null,
+      "description": "Aplicação de fertilizante NPK",
+      "notes": "Dose: 300kg/ha"
+    }
+  ],
+  "stocks": [
+    {
+      "name": "Armazém Principal",
+      "type": "WAREHOUSE",
+      "capacity": 5000,
+      "currentOccupation": 2345.5,
+      "unit": "TON",
+      "farmId": "1",
+      "id": "1"
+    },
+    {
+      "name": "Silo 1",
+      "type": "SILO",
+      "capacity": 2000,
+      "currentOccupation": 1500,
+      "unit": "TON",
+      "farmId": "1",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "farmId": "2",
+      "name": "Depósito de Insumos",
+      "type": "WAREHOUSE",
+      "capacity": 1000,
+      "currentOccupation": 450,
+      "unit": "TON"
+    },
+    {
+      "id": "4",
+      "farmId": "3",
+      "name": "Armazém Secundário",
+      "type": "WAREHOUSE",
+      "capacity": 3000,
+      "currentOccupation": 1200,
+      "unit": "TON"
+    }
+  ],
+  "stockItems": [
+    {
+      "id": "1",
+      "stockId": 1,
+      "name": "Soja em Grão",
+      "category": "GRAIN",
+      "quantity": 1500,
+      "unit": "TON",
+      "batchNumber": "SOJ2024-001",
+      "expirationDate": "2024-12-31"
+    },
+    {
+      "name": "Milho em Grão",
+      "category": "GRAIN",
+      "quantity": 845.5,
+      "unit": "TON",
+      "batchNumber": "MIL2024-001",
+      "expirationDate": "2024-12-31T00:00:00.000Z",
+      "stockId": 1,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "stockId": 2,
+      "name": "Fertilizante NPK",
+      "category": "FERTILIZER",
+      "quantity": 1500,
+      "unit": "TON",
+      "batchNumber": "FRT2024-001",
+      "expirationDate": "2025-06-30"
+    },
+    {
+      "id": "4",
+      "stockId": 3,
+      "name": "Defensivo Agrícola",
+      "category": "PESTICIDE",
+      "quantity": 450,
+      "unit": "TON",
+      "batchNumber": "DEF2024-001",
+      "expirationDate": "2024-08-31"
+    },
+    {
+      "id": "5",
+      "stockId": 4,
+      "name": "Sementes de Soja",
+      "category": "SEED",
+      "quantity": 800,
+      "unit": "TON",
+      "batchNumber": "SEM2024-001",
+      "expirationDate": "2024-09-30"
+    }
+  ],
+  "stockMovements": [
+    {
+      "stockItemId": "1",
+      "quantity": 1500,
+      "unit": "TON",
+      "movementType": "IN",
+      "sourceLocation": {
+        "type": "supplierLocation",
+        "id": "SUP001"
+      },
+      "destinationLocation": {
+        "type": "stockLocation",
+        "id": "1"
+      },
+      "occurrenceDate": "2024-03-15T00:00:00.000Z",
+      "observations": "Entrada inicial de soja em grão",
+      "status": "COMPLETED",
+      "id": "1"
+    },
+    {
+      "stockItemId": "1",
+      "quantity": 500,
+      "unit": "TON",
+      "movementType": "TRANSFER",
+      "sourceLocation": {
+        "type": "stockLocation",
+        "id": "1"
+      },
+      "destinationLocation": {
+        "type": "stockLocation",
+        "id": "2"
+      },
+      "occurrenceDate": "2024-03-20T00:00:00.000Z",
+      "observations": "Transferência entre armazéns",
+      "status": "COMPLETED",
+      "id": "2"
+    },
+    {
+      "stockItemId": "2",
+      "quantity": 845.5,
+      "unit": "TON",
+      "movementType": "IN",
+      "sourceLocation": {
+        "type": "fieldLocation",
+        "id": "1"
+      },
+      "destinationLocation": {
+        "type": "stockLocation",
+        "id": "1"
+      },
+      "occurrenceDate": "2024-03-18T00:00:00.000Z",
+      "observations": "Entrada de milho da colheita",
+      "status": "COMPLETED",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "stockItemId": "3",
+      "quantity": 1500,
+      "unit": "TON",
+      "occurrenceDate": "2024-03-25",
+      "observations": "Compra de fertilizante NPK",
+      "sourceLocation": {
+        "type": "supplierLocation",
+        "id": "SUP002"
+      },
+      "destinationLocation": {
+        "type": "stockLocation",
+        "id": "2"
+      },
+      "createdAt": "2024-03-25T11:20:00Z",
+      "status": "COMPLETED",
+      "movementType": "IN"
+    },
+    {
+      "id": "5",
+      "stockItemId": "4",
+      "quantity": 200,
+      "unit": "TON",
+      "occurrenceDate": "2024-03-28",
+      "observations": "Saída de defensivo para aplicação",
+      "sourceLocation": {
+        "type": "stockLocation",
+        "id": "3"
+      },
+      "destinationLocation": {
+        "type": "fieldLocation",
+        "id": "2"
+      },
+      "createdAt": "2024-03-28T08:00:00Z",
+      "status": "COMPLETED",
+      "movementType": "OUT"
+    },
+    {
+      "id": "6",
+      "stockItemId": "1",
+      "quantity": 800,
+      "unit": "TON",
+      "occurrenceDate": "2024-04-01",
+      "observations": "Venda de soja para cliente",
+      "sourceLocation": {
+        "type": "stockLocation",
+        "id": "1"
+      },
+      "destinationLocation": {
+        "type": "clientLocation",
+        "id": "CLI001"
+      },
+      "createdAt": "2024-04-01T13:30:00Z",
+      "status": "PENDING",
+      "movementType": "OUT"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+.data-grid-container {
+  background: transparent;
+  overflow: hidden;
+  padding-top: 5px;
+
+  .data-grid-header {
+    .mat-form-field {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  .mat-mdc-table {
+    width: 100%;
+    background: transparent;
+  }
+
+  .mat-mdc-row {
+    background: white;
+    margin: 4px 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+
+    &:hover {
+      background: #fbfbfb;
+    }
+
+    .mat-mdc-cell {
+      &.cdk-column-status {
+        width: 120px;
+      }
+    }
+  }
+
+  .mat-mdc-header-row {
+    background: #e8e8e84d;
+    border-radius: 4px;
+    margin: 0 0 8px 0;
+  }
+
+  .mat-mdc-header-cell {
+    color: #333;
+    font-weight: 600;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .mat-mdc-cell {
+    padding: 16px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: none;
+  }
+
+  .mat-mdc-paginator {
+    background: transparent;
+    margin-top: 16px;
+  }
+
+  .mat-chip-listbox {
+    pointer-events: none;
+
+    .mat-mdc-chip {
+      min-height: 24px;
+      padding: 0 12px;
+      font-size: 12px;
+    }
+  }
+
+  .mat-mdc-no-data-row {
+    background: white;
+    border-radius: 4px;
+
+    .mat-mdc-cell {
+      text-align: center;
+      color: #999;
+      padding: 24px;
+    }
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+
+  button {
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

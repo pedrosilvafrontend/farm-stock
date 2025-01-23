@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h2>Fazendas</h2>
+  <div class="page-actions">
+    <button mat-raised-button color="primary" (click)="openNewDialog()">
+      <mat-icon>add</mat-icon>
+      Nova Fazenda
+    </button>
+  </div>
+</div>
+
+<app-data-grid
+  [data]="data"
+  [columns]="columns"
+  [totalItems]="totalItems"
+  [pageSize]="pageSize"
+  [pageIndex]="pageIndex"
+  [sortable]="true"
+  [filterable]="true"
+  [pageable]="true"
+  (page)="onPageChange($event)"
+  (edit)="onEdit($event)"
+  (delete)="onDelete($event)">
+</app-data-grid>

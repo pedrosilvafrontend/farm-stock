@@ -1,0 +1,64 @@
+.menu-section {
+  padding: 20px 0;
+
+  .menu-header {
+    padding: 0 16px;
+    margin-bottom: 8px;
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .mdc-list-item {
+    color: rgba(255,255,255,0.7);
+    span {
+      color: rgba(255,255,255,0.7);
+    }
+    .mat-icon {
+      color: rgba(255,255,255,0.7);
+      margin-right: 16px;
+
+      &.menu-arrow {
+        margin-right: 0;
+        margin-left: auto;
+        font-size: 18px;
+        opacity: 0.5;
+      }
+    }
+
+    &:hover, &.active {
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+
+      .mat-icon {
+        color: #fff;
+      }
+    }
+
+    :ng-deep .mdc-list-item__content > span {
+      display: flex;
+      align-items: center;
+    }
+
+    &> span > span {
+      display: flex;
+      align-items: center;
+    }
+  }
+  :ng-deep {
+    mat-nav-list a.mdc-list-item {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+:host ::ng-deep {
+  mat-nav-list a.mdc-list-item {
+    border-radius: unset;
+    & > span > span {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
