@@ -1,30 +1,50 @@
 # FarmStock
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.2.
+This project was generated using Angular 19.1.2.
 
 ## Development server
+
+To start the JSON server, run:
+
+```bash
+npm run api
+```
 
 To start a local development server, run:
 
 ```bash
-ng serve
+npm run start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+# Api endpoints
+baseUrl: http://localhost:3000
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Farms
+- `GET /farms` - Get all farms
+- `POST /farms` - Create a farm
+- `PUT /farms/:id` - Update a farm
+- `DELETE /farms/:id` - Delete a farm
 
-```bash
-ng generate component component-name
-```
+### Stocks
+- `GET /stocks` - Get all stocks
+- `POST /stocks` - Create a stock
+- `PUT /stocks/:id` - Update a stock
+- `DELETE /stocks/:id` - Delete a stock
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Stock Items
+- `GET /stockItems` - Get all stock items
+- `POST /stockItems` - Create a stock item
+- `PUT /stockItems/:id` - Update a stock item
+- `DELETE /stockItems/:id` - Delete a stock item
 
-```bash
-ng generate --help
-```
+### Stock Movements
+- `GET /stockMovements` - Get all stock movements
+- `POST /stockMovements` - Create a stock movement
+- `PUT /stockMovements/:id` - Update a stock movement
+- `DELETE /stockMovements/:id` - Delete a stock movement
+
 
 ## Building
 
@@ -52,8 +72,3 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
